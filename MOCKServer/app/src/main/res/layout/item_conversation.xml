@@ -1,0 +1,71 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="conversation"
+            type="com.advanced.mockserver.Conversation" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_edit_text"
+        android:padding="16dp">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_conversation"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_name_user"
+            android:text="@{conversation.receiverName}"
+            android:textColor="@color/primary_text_color"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/text_lass_message"
+            app:layout_constraintTop_toTopOf="@id/image_conversation"
+            app:layout_constraintStart_toEndOf="@id/image_conversation"/>
+
+        <TextView
+            android:id="@+id/text_lass_message"
+            android:text="@{conversation.lastMessage}"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="@id/text_timestamp"
+            app:layout_constraintTop_toBottomOf="@id/text_name_user"
+            app:layout_constraintBottom_toBottomOf="@id/image_conversation"
+            app:layout_constraintStart_toStartOf="@id/text_name_user"/>
+
+        <TextView
+            android:id="@+id/text_timestamp"
+            android:text="@{conversation.timestamp}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/image_conversation"
+            app:layout_constraintTop_toTopOf="@id/image_conversation"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

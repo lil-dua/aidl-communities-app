@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="message"
+            type="com.advanced.mockserver.ChatMessage" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_user"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/background_user_avatar"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/text_message"
+            app:riv_oval="true"/>
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{message.message}"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/background_received_message"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintWidth_max="wrap"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/image_user"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.75" />
+
+        <TextView
+            android:id="@+id/text_timestamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{message.timestamp}"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/text_message"
+            app:layout_constraintTop_toBottomOf="@id/text_message"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
