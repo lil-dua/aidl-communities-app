@@ -2,22 +2,15 @@
 
 Server App
 
-<img src="Screenshot/Screenshot_1.png" width = "250" >   <img src="Screenshot_2.png" width = "250" >   
+<img src="Screenshot/Screenshot_1.png" width = "250" >   <img src="Screenshot/Screenshot_2.png" width = "250" >   
 
-
-Create Contact and Search
-
-<img src="Screenshot_3.png" width = "250" >   <img src="Screenshot_4.png" width = "250" >
-
-
-Contact Information
- 
- <img src="Screenshot_5.png" width = "250" >        <img src="Screenshot_6.png" width = "250" >      <img src="Screenshot_7.png" width = "250" > 
+<img src="Screenshot/Screenshot_3.png" width = "250" >   <img src="Screenshot/Screenshot_4.png" width = "250" >
 
 
 Client App
+ 
+ <img src="Screenshot/Screenshot_5.png" width = "250" >        <img src="Screenshot/Screenshot_6.png" width = "250" >      
 
-<img src="Screenshot_8.png" width = "250" >  <img src="Screenshot_9.png" width = "250" > 
 
  
 # Technology used:
