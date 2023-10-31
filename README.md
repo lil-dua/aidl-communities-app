@@ -13,9 +13,14 @@ Client App
 
  
 # Technology used:
-    ViewBinding
-    SQLite
-    Rounded Image View
+    Communication between 2 apps using Android Interface Definition Language (AIDL) 
+    Storage using Room Database.
+    Managing and injecting dependencies app with Dagger-Hilt.
+    MVVM architectural pattern + dataBinding.
+    Navigation.
+    Efficiently update data in a RecyclerView with DiffUtil.
+    Single-activity pattern.
+    Kotlin Flow.
     
 
 # 🌐Socials
