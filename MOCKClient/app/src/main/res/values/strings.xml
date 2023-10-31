@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MOCK Client</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove_friend">Remove Friend?</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="recent_conversations">Recent Conversations</string>
+    <string name="friends">Friends</string>
+    <string name="mock_server_app">MOCK SERVER APP</string>
+    <string name="welcome_back">WELCOME BACK!</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="login">Login</string>
+    <string name="log_in">Log In</string>
+    <string name="remove_conversation">Remove Conversation?</string>
+    <string name="back_to_previous_fragment">Back to previous fragment</string>
+    <string name="image_remove_conversation">Image remove conversation</string>
+    <string name="h">H</string>
+    <string name="user_name">User name</string>
+    <string name="online">Online</string>
+    <string name="image_to_add_new_conversation">Image to add new conversation</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="user_information">User Information</string>
+    <string name="select_image">Select image</string>
+    <string name="account">ACCOUNT</string>
+    <string name="image_remove_user">Image remove user</string>
+    <string name="you_ll_can_t_connect_to_this_user">You\'ll can\'t connect to this user.</string>
+    <string name="image_dialog_remove_conversation">Image dialog remove conversation</string>
+    <string name="you_ll_can_t_see_all_message_any_more">You\'ll can\'t see all message any more.</string>
+    <string name="image_logout">Image logout</string>
+    <string name="image_search_user">Image search user</string>
+    <string name="server_chat_app">Server Chat App</string>
+    <string name="conversations">Conversations</string>
+    <string name="client_chat_app">Client Chat App</string>
+</resources>

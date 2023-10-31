@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/secondary_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="40dp">
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_playlist_remove"
+        android:padding="10dp"
+        app:tint="@color/secondary_color"
+        android:background="@drawable/background_delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/image_dialog_remove_conversation"/>
+
+    <TextView
+        android:id="@+id/text_title_delete"
+        android:text="@string/remove_conversation"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/image_delete"
+        app:layout_constraintStart_toEndOf="@id/image_delete"/>
+
+    <TextView
+        android:id="@+id/text_content_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/you_ll_can_t_see_all_message_any_more"
+        app:layout_constraintBottom_toBottomOf="@id/image_delete"
+        app:layout_constraintStart_toStartOf="@id/text_title_delete"/>
+
+
+    <TextView
+        android:id="@+id/text_dialog_cancel"
+        android:text="@string/cancel"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:background="@drawable/background_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/text_dialog_delete"
+        app:layout_constraintTop_toBottomOf="@id/image_delete"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_dialog_delete"
+        android:text="@string/remove"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="40dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/secondary_color"
+        android:background="@drawable/background_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/text_dialog_cancel"
+        app:layout_constraintBottom_toBottomOf="@id/text_dialog_cancel"
+        app:layout_constraintTop_toTopOf="@id/text_dialog_cancel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
